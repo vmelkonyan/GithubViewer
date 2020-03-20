@@ -1,4 +1,4 @@
-# githubviewer app
+# GithubViewer app
 #You can search repository 
 #You can see committer and commits 
 #You can see issues and timeline
