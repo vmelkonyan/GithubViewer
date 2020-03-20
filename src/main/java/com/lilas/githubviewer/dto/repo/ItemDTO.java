@@ -159,6 +159,13 @@ public class ItemDTO {
     private double score;
 
     public String getDescription() {
-        return description == null ? "Empty Message" : description;
+        if (description != null) {
+            if (description.length() > 200) {
+                return description.substring(0, 200);
+            }
+        } else {
+            return "Empty Description";
+        }
+        return description;
     }
 }
