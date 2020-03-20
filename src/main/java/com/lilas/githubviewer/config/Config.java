@@ -1,4 +1,4 @@
-package com.lilas.githubviewer;
+package com.lilas.githubviewer.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

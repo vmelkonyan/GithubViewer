@@ -9,7 +9,7 @@ import javax.validation.constraints.NotBlank;
 @Setter
 public class SearchDTO {
 
-    @NotBlank(message="spring")
+    @NotBlank(message = "spring")
     String filter;
     Integer size = 10;
     Integer page = 0;

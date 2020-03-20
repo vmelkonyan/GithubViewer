@@ -33,7 +33,7 @@ public class CommitsController {
     public String showCommits(@Valid DetailsDTO detailsDTO, Model model) throws AppException {
         CommitModelDTO[] commitModelDTOList = commitsService.commitInfo(detailsDTO);
         if (commitModelDTOList != null) {
-            log.info("info_message {}",commitModelDTOList.length);
+            log.info("info_message {}", commitModelDTOList.length);
             model.addAttribute("commits", commitModelDTOList);
             log.info("response_result -------> " + Arrays.toString(commitModelDTOList));
             return KeyConstants.COMMIT_VIEW_KEY;

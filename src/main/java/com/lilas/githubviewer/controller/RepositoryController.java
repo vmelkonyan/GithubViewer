@@ -30,11 +30,11 @@ public class RepositoryController {
     @GetMapping(KeyConstants.REPO_LIST_KEY)
     public String getUserList(@Valid SearchDTO searchDTO, @PageableDefault Pageable pageable, Model model) throws AppException {
         GitPepoDTO gitPepoDTO = repoService.search(searchDTO);
-        if(gitPepoDTO != null) {
+        if (gitPepoDTO != null) {
             if (gitPepoDTO.getTotalCount() > 1000) {
                 gitPepoDTO.setTotalCount(1000);
             }
-            log.info("info_message {}",gitPepoDTO);
+            log.info("info_message {}", gitPepoDTO);
             Page<ItemDTO> page = new PageImpl<>(gitPepoDTO.getItemDTOS(), pageable, gitPepoDTO.getTotalCount());
             model.addAttribute("url", "/repoList");
             model.addAttribute("filter", searchDTO.getFilter());

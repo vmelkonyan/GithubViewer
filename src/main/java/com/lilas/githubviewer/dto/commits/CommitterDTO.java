@@ -44,7 +44,7 @@ public class CommitterDTO {
     @JsonProperty("site_admin")
     private String siteAdmin;
     @JsonProperty("name")
-    private String  name;
+    private String name;
     @JsonProperty("email")
     private String email;
     @JsonProperty("date")

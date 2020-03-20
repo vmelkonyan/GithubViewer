@@ -1,7 +1,6 @@
 package com.lilas.githubviewer.service;
 
 
-
 import com.lilas.githubviewer.dto.commits.CommitModelDTO;
 import com.lilas.githubviewer.dto.mapping.DetailsDTO;
 import org.springframework.stereotype.Service;

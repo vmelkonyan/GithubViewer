@@ -26,7 +26,7 @@ public class IssuesController {
     public String showIssues(@Valid MappingIssueDTO mappingIssueDTO, Model model) throws AppException {
         IssueDTO[] issueDTOS = issuesService.issuesInfo(mappingIssueDTO);
         if (issueDTOS != null) {
-            log.info("info_message ----> {}",issueDTOS.length);
+            log.info("info_message ----> {}", issueDTOS.length);
             model.addAttribute("issues", issueDTOS);
             return KeyConstants.ISSUES_VIEW_KEY;
         } else {
