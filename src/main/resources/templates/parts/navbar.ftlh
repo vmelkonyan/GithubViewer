@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
-                <a class="navbar-brand" href="/">Git View</a>
+                <a class="navbar-brand" href="/">Github View</a>
             </div>
             <div class="col-sm-9">
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
